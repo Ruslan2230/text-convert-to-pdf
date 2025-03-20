@@ -26,7 +26,7 @@ const App = () => {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
       <h1 className="text-2xl font-bold mb-4">Конвертація тексту в PDF</h1>
       <Textarea value={text} onChange={(e) => setText(e.target.value)} />
-      <Button onClick={handleConvert}>Конвертувати в PDF</Button>
+      <Button onClick={handleConvert}>Convert to PDF</Button>
       <PdfViewer pdfUrl={pdfUrl} />
       <HistoryList />
     </div>

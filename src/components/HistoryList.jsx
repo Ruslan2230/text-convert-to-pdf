@@ -21,7 +21,7 @@ const HistoryList = React.memo(() => {
   return (
     <div className="w-full max-w-md mt-6">
       <h2 className="text-lg font-bold mb-2 text-blue-500">
-        Історія конвертацій
+        Conversion History
       </h2>
       <ul className="border p-2 bg-white">
         {history.length === 0 ? (

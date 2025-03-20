@@ -8,10 +8,11 @@ const PdfViewer = ({ pdfUrl }) => {
   if (!pdfUrl) return null;
 
   return (
-    <div className="w-full max-w-md mt-6 border p-2">
+    <div className="w-full max-w-2xl mt-6 border p-2">
       <h2 className="text-lg font-bold mb-2">Перегляд PDF</h2>
       <Worker workerUrl="/node_modules/pdfjs-dist/build/pdf.worker.min.js">
         <Viewer
+          className="w-full max-w-lg"
           fileUrl={pdfUrl}
           onError={(error) => console.error("PDF Viewer Error:", error)}
         />

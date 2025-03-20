@@ -12,6 +12,6 @@ export const convertTextToPdf = async (text) => {
     const result = URL.createObjectURL(response.data);
     return result;
   } catch (error) {
-    throw new Error("Не вдалося створити PDF");
+    throw new Error("Failed to create PDF");
   }
 };
